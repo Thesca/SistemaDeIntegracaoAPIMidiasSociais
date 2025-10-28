@@ -19,33 +19,6 @@ Solução: A classe SocialMediaFactory é utilizada para encapsular a lógica de
 
 Resultado: O cliente é desacoplado. Para adicionar uma nova plataforma (ex: InstagramAdapter), basta modificarmos a SocialMediaFactory e criar o novo adapter; o GerenciadorMidiaSocial não sofre alteração.
 
-3. Estrutura do Projeto
-O projeto está organizado em pacotes que separam as responsabilidades:
-
-.
-├── Main.java                 (Ponto de entrada, simula o usuário)
-├── GerenciadorMidiaSocial.java (Classe Cliente, consome os padrões)
-│
-├── adapter/
-│   ├── ISocialMediaAdapter.java  (Interface Alvo - O "contrato" unificado)
-│   ├── LinkedInAdapter.java      (Adapter Concreto)
-│   ├── TikTokAdapter.java        (Adapter Concreto)
-│   └── TwitterAdapter.java       (Adapter Concreto)
-│
-├── apis/
-│   ├── LinkedInAPI.java          (Adaptee 1 - API externa simulada)
-│   ├── TikTokAPI.java            (Adaptee 2 - API externa simulada)
-│   └── TwitterAPI.java           (Adaptee 3 - API externa simulada)
-│
-├── factory/
-│   ├── Plataforma.java           (Enum para a Factory)
-│   └── SocialMediaFactory.java   (A Fábrica de Adapters)
-│
-└── model/
-    ├── Conteudo.java             (Modelo de dados unificado)
-    ├── Credenciais.java         (Modelo de dados unificado)
-    ├── RespostaEstatisticas.java (Modelo de dados unificado - Tarefa 2)
-    └── RespostaPublicacao.java   (Modelo de dados unificado - Tarefa 2)
 4. Como Compilar e Executar
 Este projeto usa pacotes, portanto, a compilação deve ser feita a partir do diretório raiz.
 
