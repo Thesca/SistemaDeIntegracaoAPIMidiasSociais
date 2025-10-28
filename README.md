@@ -46,30 +46,4 @@ Executar (do diretório raiz): Após a compilação, execute a classe Main (sem 
 Bash
 
 java Main
-5. Exemplo de Saída
-Configurando TWITTER...
-Twitter: Autenticado com Chave de API: TW_AP...
-TWITTER configurado com sucesso.
-Configurando LINKEDIN...
-LinkedIn: Autorizado com Token OAuth2: LI_OA...
-LINKEDIN configurado com sucesso.
-Configurando TIKTOK...
-TikTok: Autenticado com Client ID: TT_CL...
-TIKTOK configurado com sucesso.
 
---- TENTANDO PUBLICAR CONTEÚDO TIPO: TEXTO EM TUDO ---
-[TWITTER] Twitter: Enviando tweet: Olá mundo! Esta é uma postagem de texto unificada.
-[TWITTER] [SUCESSO] ID: 521856 | URL: https://twitter.com/user/status/521856
-[LINKEDIN] LinkedIn: Publicando artigo: Post via Agendador
-[LINKEDIN] [SUCESSO] ID: urn:li:share:123456 | URL: https://linkedin.com/feed/update/urn:li:share:123456
-[TIKTOK] [FALHA] Erro: TikTok só aceita publicações de vídeo.
-
---- TENTANDO PUBLICAR CONTEÚDO TIPO: VIDEO EM TUDO ---
-[TWITTER] [FALHA] Erro: Twitter só aceita publicações de texto.
-[LINKEDIN] [FALHA] Erro: LinkedIn (nesta simulação) só aceita Artigos ou Texto.
-[TIKTOK] TikTok: Fazendo upload do vídeo '/videos/danca_legal.mp4'. Descrição: Confira meu novo vídeo de dança!. Hashtags: [dance, viral, java]
-[TIKTOK] [SUCESSO] ID: tt_video_id_789012 | URL: https://tiktok.com/@user/video/tt_video_id_789012
-
---- VERIFICANDO ESTATÍSTICAS DE TWITTER (ID: 12345) ---
-Estatísticas: [Curtidas 150] [Compartilhamentos 45] [Comentarios 0] [Visualizacoes 0]
-    Dados Brutos: { "tweet_id": 12345, "likes": 150, "retweets": 45 }
